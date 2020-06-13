@@ -1,2 +1,3 @@
 # fcindex
-Fast Concordance Index
+
+Fast Concordance Index by Christopher Chang

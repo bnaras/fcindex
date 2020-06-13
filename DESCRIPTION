@@ -1,0 +1,20 @@
+Package: fcindex
+Type: Package
+Title: Fast C-Index Computation
+Version: 0.3
+Date: 2020-06-12
+Authors@R: c(person("Christopher", "Chang", role=c("aut", "cre", "cph"),
+	   	   email = "chrchang@alumni.caltech.edu"),
+	     person("Balasubramanian", "Narasimhan", role=c("ctb"),
+	   	   email = "naras@stat.stanford.edu"))
+Description: Fast concordance-index computation.
+License: LGPL (>= 3)
+Depends: R (>= 3.5.0)
+SystemRequirements: GNU Make
+Imports: 
+    Rcpp
+LinkingTo: Rcpp
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Encoding: UTF-8
+

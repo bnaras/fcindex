@@ -1,0 +1,18 @@
+SOLARIS=$(shell $(R_HOME)/bin/Rscript -e 'cat(grepl("SunOS", Sys.info()["sysname"]))')
+
+$(SHLIB): cindex.o plink2_base.o RcppExports.o
+
+plink2_base.o: fcindex.ts
+
+cindex.o: fcindex.ts
+
+fcindex.ts:
+ifeq ($(SOLARIS),TRUE)
+	(echo "Using Solaris modifications" && \
+	cp -f solaris_mods/plink2_base.h . && \
+	touch $@)
+else
+	(echo "Not Solaris; proceeding" && \
+	touch $@)
+endif
+

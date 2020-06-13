@@ -1,0 +1,11 @@
+^CRAN-RELEASE$
+^src/*\.o$
+^src/*\.so$
+^\.travis\.yml$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^README\.Rmd$
+^tests/*
+^.*\.Rproj$
+^\.Rproj\.user$
